@@ -17,3 +17,18 @@ Files have columns:
 		Quantification limits of the instrument
 	- flow [m^3/d]
 		Flow to the WWTP
+
+-----------------------------
+
+Additional data per 14.3: delay from symptom onset to case confirmation per Kanton:
+KTN_delays_by_month.csv
+
+onset_year / onset_month specify the year/month of the cases that were grouped together for the delay distribution (grouping by date of symptom onset instead of by date of report)
+
+ktn lists the Kanton: 
+c("ZH"="Zurich" ,  "GE"="Geneva",
+         "SG"="Altenrhein", "GR"="Chur",
+         "FR"="Laupen", "TI"="Lugano")
+
+shape / scale represent the shape/scale of a gamma distribution fitted to the data
+count: number of observations that went into the delay distribution (= # cases in the canton that month)
